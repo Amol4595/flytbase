@@ -18,7 +18,7 @@
   <div class="boxOuter" *ngIf="boxArr.length>0">
     <div *ngFor="let each of boxArr;let i=index" 
     (click)=onboxSelect(each,$event,i); class="box {{selectedDivId==each.id?'active':''}}"  id="{{each.id}}" [style.z-index]="each.zIndex">
-    <!-- <p>{{each.id}}</p> -->
+    <p>{{each.id}}</p>
     </div>
   </div>
 </div>
